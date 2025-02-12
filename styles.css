@@ -1,0 +1,115 @@
+*
+{
+    font-family: 'Courier New', Courier, monospace;
+}
+
+body {
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+    background-color: #ffccdc;
+    color: #d63384;
+    margin: 0;
+    padding: 20px;
+    cursor: url('love.png'),auto;
+}
+
+.container {
+    max-width: 600px;
+    margin: auto;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    font-size: 24px;
+}
+
+button {
+    background: #ff4d6d;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: url('love.png'),auto;
+
+}
+
+button:hover {
+    background: #d63384;
+}
+
+footer {
+    margin-top: 20px;
+    font-size: 12px;
+    color: #888;
+}
+
+/* Slideshow */
+.slideshow {
+    position: relative;
+    max-width: 300px;
+    margin: 10px auto;
+}
+
+.slide {
+    width: 100%;
+    display: none;
+}
+
+.show {
+    display: block;
+}
+
+/* Floating hearts */
+@keyframes float {
+    0% { transform: translateY(0); opacity: 1; }
+    100% { transform: translateY(-1500px); opacity: 0; }
+}
+
+.heart {
+    position: absolute;
+    font-size: 24px;
+    color: #ff4d6d;
+    animation: float 1000000s infinite ease-in-out;
+}
+
+/* Love letter fade-in */
+.love-letter {
+    display: none;
+    background: #fff5f8;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    margin: 20px auto;
+    font-family: "Cursive", sans-serif;
+    font-size: 16px;
+    text-align: center;
+    line-height: 1.5;
+    opacity: 0;
+    transform: scale(0.8);
+    animation: fadeInScale 1s forwards;
+}
+
+@keyframes fadeInScale {
+    from { opacity: 0; transform: scale(0.8); }
+    to { opacity: 1; transform: scale(1); }
+}
+
+/* Snow Effect */
+/* .snowflake {
+    position: absolute;
+    top: 0;
+    font-size: 16px;
+    color: white;
+    opacity: 0.8;
+    animation: snowfall 5s linear infinite;
+}
+
+@keyframes snowfall {
+    from { transform: translateY(0); }
+    to { transform: translateY(100vh); }
+} */

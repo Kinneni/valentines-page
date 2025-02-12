@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Valentine's Day</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <audio id="loveSong" autoplay loop>
+        <source src="audio.mp3" type="Audio/mpeg">
+    </audio>
+    
+    <button id="playMusic" onclick="toggleMusic()" type="button">Play Music 🎶</button>
+
+    <div class="container">
+        <h1>Happy Valentine's Day ❤️</h1>
+        <p>Lets Hope that we do not celebrate the next one apart 🥺</p>
+        <p>Miss you 😚</p>
+
+        <!-- Slideshow -->
+        <div class="slideshow">
+            <img src="photo2.jpg" class="slide" alt="Valentine's Day Photo 2">
+            <img src="photo3.jpg" class="slide" alt="Valentine's Day Photo 3">
+            <img src="photo4.jpg" class="slide" alt="Valentine's Day Photo 4">
+            <img src="photo5.jpg" class="slide" alt="Valentine's Day Photo 5">
+        </div>
+
+        <button onclick="showMessage()" type="button">Click Me!</button>
+
+        <div class="love-letter" id="loveLetter">
+            <p>Dear Aashy,</p>
+            <p>Being away from you is hard, I know you feel the same.
+                Lets hope that things will become better for us.</p>
+            <p>Happy Valentine’s Day! ❤️</p>
+            <p>With Lots of Love,</p>
+            <p>- Kicha</p>
+        </div>
+
+        <footer>With Lots of Love 
+                        -Kicha
+        </footer>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.4.0"></script>
+    <script src="script.js"></script>
+</body>
+</html>
